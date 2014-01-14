@@ -1,0 +1,4 @@
+name: Salesforce discoveries
+markdown: redcarpet
+pygments: true
+baseurl: /salesforce
