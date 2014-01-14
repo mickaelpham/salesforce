@@ -1,6 +1,6 @@
 safe: true
 lsi: false
-name: Salesforce discoveries
 markdown: redcarpet
 pygments: true
-source: salesforce
+name: Salesforce discoveries
+baseurl: /salesforce
