@@ -23,15 +23,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">Salesforce discoveries</a>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">Salesforce Discoveries</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            {% for p in site.pages %}
-              <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.menu_title}}</a></li>
-            {% endfor %}
+              <li><a href="{{ site.baseurl }}/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="{{ site.baseurl }}/about.html"><span class="glyphicon glyphicon-tag"></span> About</a></li>
           </ul>
         </div><!-- END navbar-collapse -->
       </div><!-- END container -->
@@ -42,7 +41,11 @@
     </div>
 
     <footer>
-      <p class="text-muted text-center">&copy; 2013 <a href="http://mpham.eu">Mickael Pham</a></p>
+      <p class="text-muted text-center">
+        <a href="http://mpham.eu">Mickael Pham</a> &bullet;
+        Content licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY License</a> &bullet;
+        <a href="{{ site.baseurl }}/feed.xml">RSS Feed</a>
+      </p>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
