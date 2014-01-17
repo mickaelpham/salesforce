@@ -4,3 +4,4 @@ markdown: redcarpet
 pygments: true
 name: Salesforce discoveries
 baseurl: /salesforce
+description: A bay area software engineer that blogs about Salesforce
