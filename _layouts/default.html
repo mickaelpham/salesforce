@@ -1,56 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  </head>
-  <body>
+{% include header.html %}
 
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">Salesforce Discoveries</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="{{ site.baseurl }}/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-              <li><a href="{{ site.baseurl }}/about.html"><span class="glyphicon glyphicon-tag"></span> About</a></li>
-          </ul>
-        </div><!-- END navbar-collapse -->
-      </div><!-- END container -->
-    </nav>
-
-    <div class="container">
-      {{ content }}
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">Salesforce Discoveries</a>
     </div>
 
-    <footer>
-      <p class="text-muted text-center">
-        <a href="http://mpham.eu">Mickael Pham</a> &bullet;
-        Content licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY License</a> &bullet;
-        <a href="{{ site.baseurl }}/feed.xml">RSS Feed</a>
-      </p>
-    </footer>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ site.baseurl }}/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><a href="{{ site.baseurl }}/about.html"><span class="glyphicon glyphicon-tag"></span> About</a></li>
+      </ul>
+    </div><!-- END navbar-collapse -->
+  </div><!-- END container -->
+</nav>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins for Bootstrap -->
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-  </body>
-</html>
+<div class="container">
+  {{ content }}
+</div>
+
+{% include footer.html %}

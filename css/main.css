@@ -4,7 +4,40 @@ h2
   font-weight: 100;
 }
 
-footer
+.author-info
 {
   margin-top: 50px;
+  padding-right: .5em;
+}
+
+.post-info
+{
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.post-title
+{
+  margin-top: 50px;
+  margin-bottom: 1em;
+}
+
+.post-content
+{
+  font-size: 110%;
+  font-weight: 400;
+}
+
+.post-nav
+{
+  margin-top: 3em;
+}
+
+footer
+{
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 2em;
 }
