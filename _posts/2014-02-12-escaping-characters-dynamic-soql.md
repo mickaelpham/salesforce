@@ -88,6 +88,9 @@ single quote is to be escaped.
 Therefore, when your users will enter a `%` or a `_` in the text field, the generated
 dynamic SOQL query will use those as wildcards.
 
+_Update:_ Salesforce does provide a [method](http://www.salesforce.com/us/developer/docs/apexcode/Content/apex_System_String_escapeSingleQuotes.htm)
+`String.escapeSingleQuotes(s)` that I recommend using instead of building your own.
+
 #### Note
 
 _Just like every other articles, I'm using the Java highlighter for my sample code
